@@ -1,0 +1,2017 @@
+[
+  {
+    "name": "musique",
+    "description": "🎵 Lancer une musique, ajouter à la file d'attente ou afficher le panneau de contrôle",
+    "options": [
+      {
+        "name": "recherche_ou_lien",
+        "type": 3,
+        "description": "Nom du morceau, artiste ou lien (YouTube/Spotify/SoundCloud)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "description": "📖 Affiche la liste complète et ordonnée de toutes les commandes du bot"
+  },
+  {
+    "name": "boost-preview",
+    "description": "🔮 Affiche un aperçu dynamique d'une annonce de boost de serveur (Idéal pour tester le visuel)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre à simuler pour le boost (Optionnel)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "tutoriel",
+    "description": "📖 Centre d'apprentissage interactif pour maîtriser toutes les commandes du bot"
+  },
+  {
+    "name": "admin",
+    "description": "⚙️ Panel d'administration suprême (Réservé au propriétaire)",
+    "defaultMemberPermissions": 8
+  },
+  {
+    "name": "dice",
+    "description": "🎲 Lance des dés contre le bot et parie des pièces !",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant à miser",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "devinette",
+    "description": "🧠 Résolvez une énigme amusante pour tenter de gagner des pièces !"
+  },
+  {
+    "name": "guess",
+    "description": "🔮 Devine un nombre secret entre 1 et 5 pour un gain multiplié !",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant de pièces à miser",
+        "required": true
+      },
+      {
+        "name": "nombre",
+        "type": 4,
+        "description": "Le nombre que vous devinez (entre 1 et 5)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "race",
+    "description": "🏇 Participe à une course de chevaux virtuelle palpitante et parie des pièces !",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant de pièces à miser",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "server-info",
+    "description": "📊 Affiche des informations détaillées et complètes sur ce serveur"
+  },
+  {
+    "name": "user-info",
+    "description": "👤 Affiche des informations détaillées et statistiques d'un membre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre à inspecter",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "slowmode",
+    "description": "⏳ Active ou modifie le mode lent (Slowmode) dans le salon actuel (Staff)",
+    "options": [
+      {
+        "name": "secondes",
+        "type": 4,
+        "description": "Nombre de secondes d'attente entre chaque message (0 pour désactiver)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "lock",
+    "description": "🔒 Verrouille le salon actuel pour empêcher les membres d'écrire (Staff)"
+  },
+  {
+    "name": "unlock",
+    "description": "🔓 Déverrouille le salon actuel pour permettre aux membres d'écrire à nouveau (Staff)"
+  },
+  {
+    "name": "poll",
+    "description": "📊 Lance un sondage premium par boutons cliquables avec média et expiration (Staff)",
+    "options": [
+      {
+        "name": "question",
+        "type": 3,
+        "description": "La question ou le sujet du sondage",
+        "required": true
+      },
+      {
+        "name": "choix1",
+        "type": 3,
+        "description": "Premier choix de réponse",
+        "required": true
+      },
+      {
+        "name": "choix2",
+        "type": 3,
+        "description": "Deuxième choix de réponse",
+        "required": true
+      },
+      {
+        "name": "choix3",
+        "type": 3,
+        "description": "Troisième choix de réponse (Optionnel)",
+        "required": false
+      },
+      {
+        "name": "choix4",
+        "type": 3,
+        "description": "Quatrième choix de réponse (Optionnel)",
+        "required": false
+      },
+      {
+        "name": "choix5",
+        "type": 3,
+        "description": "Cinquième choix de réponse (Optionnel)",
+        "required": false
+      },
+      {
+        "name": "expiration",
+        "type": 4,
+        "description": "Durée avant expiration du sondage en secondes (ex: 60) (Optionnel)",
+        "required": false
+      },
+      {
+        "name": "media",
+        "type": 11,
+        "description": "Média ou image à inclure dans la question du sondage (Optionnel)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "ticket",
+    "description": "🎫 Ouvre le panneau de sélection de catégorie de tickets d'assistance"
+  },
+  {
+    "name": "close",
+    "description": "🔒 Ferme définitivement le ticket d'assistance actuel"
+  },
+  {
+    "name": "avatar",
+    "description": "👤 Affiche la photo de profil (avatar) d'un membre du serveur",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre dont vous voulez voir l'avatar (laissez vide pour vous-même)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "banner",
+    "description": "🖼️ Affiche la bannière d'un membre du serveur",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre dont vous voulez voir la bannière (laissez vide pour vous-même)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "profile",
+    "description": "💳 Affiche la carte d'identité et le profil complet d'un membre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre dont vous voulez voir le profil (laissez vide pour vous-même)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "ban",
+    "description": "🔨 Bannir définitivement un membre du serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à bannir",
+        "required": true
+      },
+      {
+        "name": "raison",
+        "type": 3,
+        "description": "Raison du bannissement",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "kick",
+    "description": "👢 Expulser temporairement un membre du serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à expulser",
+        "required": true
+      },
+      {
+        "name": "raison",
+        "type": 3,
+        "description": "Raison de l'expulsion",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "mute",
+    "description": "🔇 Rendre muet temporairement un membre (Timeout - Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à rendre muet",
+        "required": true
+      },
+      {
+        "name": "duree",
+        "type": 4,
+        "description": "Durée de la sourdine en minutes",
+        "required": true
+      },
+      {
+        "name": "raison",
+        "type": 3,
+        "description": "Raison du timeout",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "role-give",
+    "description": "👑 Attribuer un rôle à un membre du serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre cible",
+        "required": true
+      },
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Rôle à donner",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "clear",
+    "description": "🧹 Supprimer en masse les messages d'un salon textuel (Staff)",
+    "options": [
+      {
+        "name": "nombre",
+        "type": 4,
+        "description": "Le nombre de messages à supprimer (1 à 100)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "invite",
+    "description": "🔗 Obtenir le lien d'invitation officiel pour ajouter le bot à vos serveurs"
+  },
+  {
+    "name": "giveaway",
+    "description": "🎉 Lancer un concours de giveaway de pièces ou de rôle (Admin uniquement)",
+    "options": [
+      {
+        "name": "nom",
+        "type": 3,
+        "description": "Nom/Titre personnalisé du concours",
+        "required": true
+      },
+      {
+        "name": "description",
+        "type": 3,
+        "description": "Description/Texte personnalisé du concours",
+        "required": true
+      },
+      {
+        "name": "temps",
+        "type": 3,
+        "description": "Durée du concours (ex: 30s, 5m, 2h, 1d)",
+        "required": true
+      },
+      {
+        "name": "gain-pieces",
+        "type": 4,
+        "description": "Quantité de pièces à offrir au(x) gagnant(s)",
+        "required": false
+      },
+      {
+        "name": "gain-role",
+        "type": 8,
+        "description": "Rôle à offrir au(x) gagnant(s)",
+        "required": false
+      },
+      {
+        "name": "temporaire-role",
+        "type": 5,
+        "description": "Le rôle offert est-il temporaire ?",
+        "required": false
+      },
+      {
+        "name": "expiration-role",
+        "type": 3,
+        "description": "Si temporaire, durée de validité du rôle (ex: 10m, 2h, 1d, 7d)",
+        "required": false
+      },
+      {
+        "name": "gagnants",
+        "type": 4,
+        "description": "Nombre de gagnants à tirer au sort (défaut: 1)",
+        "required": false
+      },
+      {
+        "name": "participants-max",
+        "type": 4,
+        "description": "Nombre maximal de participants autorisés",
+        "required": false
+      },
+      {
+        "name": "role-requis",
+        "type": 8,
+        "description": "Rôle requis obligatoire pour pouvoir participer",
+        "required": false
+      },
+      {
+        "name": "role-ping",
+        "type": 8,
+        "description": "Rôle à ping lors du lancement du concours",
+        "required": false
+      },
+      {
+        "name": "media",
+        "type": 11,
+        "description": "Image ou GIF pour accompagner l'embed du concours",
+        "required": false
+      },
+      {
+        "name": "invitations-requises",
+        "type": 4,
+        "description": "Nombre d'invitations requises pour pouvoir participer",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "economy-config",
+    "description": "🪙 Configure les paramètres financiers de l'économie virtuelle (Admin uniquement)",
+    "options": [
+      {
+        "name": "activer",
+        "type": 5,
+        "description": "Activer ou désactiver le système d'économie sur ce serveur",
+        "required": false
+      },
+      {
+        "name": "devise",
+        "type": 3,
+        "description": "Nom de la monnaie (ex: pièces)",
+        "required": false
+      },
+      {
+        "name": "emoji",
+        "type": 3,
+        "description": "Emoji de la monnaie (ex: 🪙)",
+        "required": false
+      },
+      {
+        "name": "travail-min",
+        "type": 4,
+        "description": "Salaire minimum pour /work",
+        "required": false
+      },
+      {
+        "name": "travail-max",
+        "type": 4,
+        "description": "Salaire maximum pour /work",
+        "required": false
+      },
+      {
+        "name": "crime-min",
+        "type": 4,
+        "description": "Gain criminel minimum",
+        "required": false
+      },
+      {
+        "name": "crime-max",
+        "type": 4,
+        "description": "Gain criminel maximum",
+        "required": false
+      },
+      {
+        "name": "rob-succes",
+        "type": 4,
+        "description": "Taux de réussite du vol en % (1-100)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "setup-counting",
+    "description": "🔢 Définir et installer le salon de comptage interactif (Staff / Admin)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Salon textuel dédié au jeu de comptage",
+        "required": true
+      },
+      {
+        "name": "emoji",
+        "type": 3,
+        "description": "Emoji envoyé lors d'un bon nombre (ex: ✅, 💯, 🔥)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "counting-stats",
+    "description": "📊 Afficher le nombre actuel, le record du serveur et le classement du comptage",
+    "options": []
+  },
+  {
+    "name": "coins",
+    "description": "💸 Gère le solde financier d'un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "action",
+        "type": 3,
+        "description": "Action à effectuer",
+        "required": true,
+        "choices": [
+          {
+            "name": "Ajouter des pièces",
+            "value": "add"
+          },
+          {
+            "name": "Retirer des pièces",
+            "value": "remove"
+          }
+        ]
+      },
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre concerné",
+        "required": true
+      },
+      {
+        "name": "montant",
+        "type": 4,
+        "description": "Montant de pièces",
+        "required": true
+      },
+      {
+        "name": "type",
+        "type": 3,
+        "description": "Portefeuille ou Banque",
+        "required": false,
+        "choices": [
+          {
+            "name": "Portefeuille (Wallet)",
+            "value": "wallet"
+          },
+          {
+            "name": "Banque (Bank)",
+            "value": "bank"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "balance",
+    "description": "💳 Affiche le solde en pièces d'un membre ou le vôtre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à inspecter (optionnel)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "work",
+    "description": "💼 Travaillez dur pour gagner des pièces honnêtement"
+  },
+  {
+    "name": "config",
+    "description": "⚙️ Configuration globale et complète de tous les modules du bot (Admin uniquement)"
+  },
+  {
+    "name": "traduction",
+    "description": "🌐 Traduire un message en temps réel (auto-suppression après 30s)",
+    "options": [
+      {
+        "name": "texte",
+        "type": 3,
+        "description": "Le message ou texte à traduire",
+        "required": true
+      },
+      {
+        "name": "langue",
+        "type": 3,
+        "description": "La langue cible (ex: FR, EN, ES, IT, DE, JA)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "rob",
+    "description": "🥷 Tentez de détrousser le portefeuille d'un autre membre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à cambrioler",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "leveling-config",
+    "description": "✨ Configure la progression d'XP et le système de niveaux (Admin uniquement)",
+    "options": [
+      {
+        "name": "status",
+        "type": 5,
+        "description": "Activer/Désactiver le système d'XP",
+        "required": false
+      },
+      {
+        "name": "xp-min",
+        "type": 4,
+        "description": "XP minimum par message",
+        "required": false
+      },
+      {
+        "name": "xp-max",
+        "type": 4,
+        "description": "XP maximum par message",
+        "required": false
+      },
+      {
+        "name": "cooldown",
+        "type": 4,
+        "description": "Cooldown d'XP en secondes",
+        "required": false
+      },
+      {
+        "name": "vocal-xp",
+        "type": 4,
+        "description": "XP attribuée en vocal",
+        "required": false
+      },
+      {
+        "name": "vocal-minutes",
+        "type": 4,
+        "description": "Fréquence d'attribution vocale (minutes)",
+        "required": false
+      },
+      {
+        "name": "annonce-type",
+        "type": 3,
+        "description": "Où annoncer le level-up",
+        "required": false,
+        "choices": [
+          {
+            "name": "Salon Courant",
+            "value": "current"
+          },
+          {
+            "name": "Salon Dédié",
+            "value": "channel"
+          },
+          {
+            "name": "Message Privé (MP)",
+            "value": "dm"
+          },
+          {
+            "name": "Désactivé",
+            "value": "off"
+          }
+        ]
+      },
+      {
+        "name": "annonce-salon",
+        "type": 3,
+        "description": "ID du salon dédié pour les annonces",
+        "required": false
+      },
+      {
+        "name": "prime-status",
+        "type": 5,
+        "description": "Attribuer une prime d'argent au level-up",
+        "required": false
+      },
+      {
+        "name": "prime-montant",
+        "type": 4,
+        "description": "Montant de la prime de niveau",
+        "required": false
+      },
+      {
+        "name": "blacklist-action",
+        "type": 3,
+        "description": "Action pour la liste noire d'XP (ajouter ou retirer)",
+        "required": false,
+        "choices": [
+          {
+            "name": "Ajouter",
+            "value": "add"
+          },
+          {
+            "name": "Retirer",
+            "value": "remove"
+          }
+        ]
+      },
+      {
+        "name": "blacklist-salon",
+        "type": 7,
+        "description": "Le salon textuel ou vocal à ajouter ou retirer de la liste noire d'XP",
+        "required": false
+      },
+      {
+        "name": "reward-action",
+        "type": 3,
+        "description": "Gérer les rôles de récompense par niveau (ajouter, supprimer, liste)",
+        "required": false,
+        "choices": [
+          {
+            "name": "Ajouter / Modifier une récompense",
+            "value": "ajouter"
+          },
+          {
+            "name": "Supprimer une récompense",
+            "value": "supprimer"
+          },
+          {
+            "name": "Lister les récompenses actuelles",
+            "value": "liste"
+          }
+        ]
+      },
+      {
+        "name": "reward-niveau",
+        "type": 4,
+        "description": "Niveau requis pour débloquer le rôle (ex: 1, 5, 10)",
+        "required": false
+      },
+      {
+        "name": "reward-role",
+        "type": 8,
+        "description": "Rôle à attribuer à ce niveau",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "boost-config",
+    "description": "⚡ Configure le salon spécial pour célébrer les boosts de serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Le salon où annoncer les boosts de serveur",
+        "required": true
+      },
+      {
+        "name": "statut",
+        "type": 5,
+        "description": "Activer ou désactiver les annonces de boosts",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "rank",
+    "description": "🏆 Affiche votre niveau, XP globale et carte de classement",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à inspecter",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "giftcard",
+    "description": "🎁 Gestion des cartes et codes cadeaux (Admin uniquement)",
+    "options": [
+      {
+        "name": "add",
+        "type": 1,
+        "description": "Génère un nouveau code cadeau utilisable par les membres",
+        "options": [
+          {
+            "name": "code",
+            "type": 3,
+            "description": "Code secret de la carte (ex: PROMO50)",
+            "required": true
+          },
+          {
+            "name": "gain",
+            "type": 4,
+            "description": "Valeur du gain en pièces",
+            "required": true
+          },
+          {
+            "name": "tier",
+            "type": 3,
+            "description": "Rareté de la carte",
+            "required": true,
+            "choices": [
+              {
+                "name": "Commun",
+                "value": "commun"
+              },
+              {
+                "name": "Rare",
+                "value": "rare"
+              },
+              {
+                "name": "Épique",
+                "value": "epique"
+              },
+              {
+                "name": "Légendaire",
+                "value": "legendaire"
+              }
+            ]
+          },
+          {
+            "name": "max-utilisations",
+            "type": 3,
+            "description": "Nombre maximal d'utilisations (ex: 10 ou infini)",
+            "required": false
+          },
+          {
+            "name": "expiration",
+            "type": 3,
+            "description": "Date d'expiration (JJ-MM-AAAA) ou off",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "type": 1,
+        "description": "Supprime un code cadeau existant du système",
+        "options": [
+          {
+            "name": "code",
+            "type": 3,
+            "description": "Code secret à supprimer",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "list",
+        "type": 1,
+        "description": "Affiche la liste complète de tous les codes cadeaux actifs"
+      }
+    ]
+  },
+  {
+    "name": "claim",
+    "description": "🎉 Réclamer un code cadeau actif pour toucher instantanément vos pièces",
+    "options": [
+      {
+        "name": "code",
+        "type": 3,
+        "description": "Code cadeau secret",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "ticket-config",
+    "description": "⚙️ Configure les aspects techniques du système de tickets (Admin uniquement)",
+    "options": [
+      {
+        "name": "prefix",
+        "type": 3,
+        "description": "Préfixe des salons de ticket (ex: ticket-)",
+        "required": false
+      },
+      {
+        "name": "staff-role",
+        "type": 8,
+        "description": "Rôle du staff autorisé à gérer les tickets",
+        "required": false
+      },
+      {
+        "name": "categorie-id",
+        "type": 3,
+        "description": "ID de la catégorie parente pour générer les salons",
+        "required": false
+      },
+      {
+        "name": "logs-salon",
+        "type": 3,
+        "description": "ID du salon de logs des tickets",
+        "required": false
+      },
+      {
+        "name": "titre",
+        "type": 3,
+        "description": "Titre de l'embed de bienvenue",
+        "required": false
+      },
+      {
+        "name": "desc",
+        "type": 3,
+        "description": "Description de l'embed de bienvenue",
+        "required": false
+      },
+      {
+        "name": "bouton-texte",
+        "type": 3,
+        "description": "Texte d'ouverture sur le bouton principal",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "status-bot",
+    "description": "📊 Affiche l'état en direct du bot, le serveur de support et son créateur"
+  },
+  {
+    "name": "guard-status",
+    "description": "🛡️ Affiche un état complet des modules actifs du bouclier (Admin uniquement)"
+  },
+  {
+    "name": "social",
+    "description": "📱 Gestion des flux et notifications de réseaux sociaux (Admin uniquement)",
+    "options": [
+      {
+        "name": "add",
+        "type": 1,
+        "description": "Ajoute un flux automatique de notification pour YouTube/TikTok/Twitch",
+        "options": [
+          {
+            "name": "plateforme",
+            "type": 3,
+            "description": "Plateforme réseau social",
+            "required": true,
+            "choices": [
+              {
+                "name": "YouTube 🎥",
+                "value": "youtube"
+              },
+              {
+                "name": "TikTok 📱",
+                "value": "tiktok"
+              },
+              {
+                "name": "Twitch 🎮",
+                "value": "twitch"
+              },
+              {
+                "name": "Custom 🌐",
+                "value": "custom"
+              }
+            ]
+          },
+          {
+            "name": "compte",
+            "type": 3,
+            "description": "Nom ou identifiant de la chaîne (ex: @user)",
+            "required": true
+          },
+          {
+            "name": "salon",
+            "type": 7,
+            "description": "Salon textuel pour envoyer les annonces",
+            "required": true
+          },
+          {
+            "name": "message",
+            "type": 3,
+            "description": "Message personnalisé pour l'alerte (variables: {nom}, {lien}, {titre})",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "type": 1,
+        "description": "Supprime un flux automatique de notification existant",
+        "options": [
+          {
+            "name": "compte",
+            "type": 3,
+            "description": "Nom exact du compte ou chaîne à retirer",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "list",
+        "type": 1,
+        "description": "Affiche la liste de tous les flux réseaux sociaux configurés"
+      },
+      {
+        "name": "test",
+        "type": 1,
+        "description": "Simule et teste instantanément une publication/live de réseau social",
+        "options": [
+          {
+            "name": "compte",
+            "type": 3,
+            "description": "Nom de la chaîne ou compte à simuler",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "fight",
+    "description": "⚔️ Lance un combat RPG stratégique pour gagner de l'XP RPG !",
+    "options": [
+      {
+        "name": "adversaire",
+        "type": 6,
+        "description": "Membre à affronter (Laisser vide pour combattre un monstre !)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "rpg-stats",
+    "description": "🥋 Affiche votre feuille de personnage RPG détaillée, équipement et ratio",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à inspecter",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "casino-duel",
+    "description": "🎲 Propose un pari de duel de casino très risqué à un membre !",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à défier",
+        "required": true
+      },
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant de pièces à parier",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "bet",
+    "description": "🪙 Parier vos pièces au jeu de pile ou face de casino !",
+    "options": [
+      {
+        "name": "montant",
+        "type": 4,
+        "description": "Montant de pièces à miser",
+        "required": true
+      },
+      {
+        "name": "choix",
+        "type": 3,
+        "description": "Côté de la pièce",
+        "required": true,
+        "choices": [
+          {
+            "name": "Pile 🪙",
+            "value": "pile"
+          },
+          {
+            "name": "Face 👤",
+            "value": "face"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "shop-role",
+    "description": "🛍️ Gestion des rôles et grades en vente dans la boutique",
+    "options": [
+      {
+        "name": "add",
+        "type": 1,
+        "description": "Ajoute un rôle à la boutique avec son prix et sa description (Admin uniquement)",
+        "options": [
+          {
+            "name": "role",
+            "type": 8,
+            "description": "Le rôle à vendre",
+            "required": true
+          },
+          {
+            "name": "prix",
+            "type": 4,
+            "description": "Prix du rôle en pièces",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": 3,
+            "description": "Description du rôle",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "delete",
+        "type": 1,
+        "description": "Supprime un rôle de la boutique (Admin uniquement)",
+        "options": [
+          {
+            "name": "role",
+            "type": 8,
+            "description": "Le rôle à retirer",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "list",
+        "type": 1,
+        "description": "Affiche les grades et rôles disponibles à l'achat dans la boutique"
+      }
+    ]
+  },
+  {
+    "name": "deposit",
+    "description": "🏦 Dépose de l'argent de votre portefeuille vers votre compte en banque",
+    "options": [
+      {
+        "name": "montant",
+        "type": 3,
+        "description": "Le montant à déposer, ou \"all\" pour tout déposer",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "withdraw",
+    "description": "🏦 Retire de l'argent de votre compte en banque vers votre portefeuille",
+    "options": [
+      {
+        "name": "montant",
+        "type": 3,
+        "description": "Le montant à retirer, ou \"all\" pour tout retirer",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "blackjack",
+    "description": "🃏 Joue une partie de Blackjack palpitante contre la banque avec des boutons",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant à miser",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "slots",
+    "description": "🎰 Tente ta chance à la machine à sous avec des boutons !",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant à miser",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "roulette",
+    "description": "🎡 Parie tes pièces à la roulette du casino !",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Montant à miser",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "deban",
+    "description": "🔓 Débannir un membre du serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "id",
+        "type": 3,
+        "description": "ID Discord de l'utilisateur à débannir",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "demute",
+    "description": "🔊 Retirer la sourdine d'un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre à demute",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "clear-warns",
+    "description": "🗑️ Effacer tous les avertissements d'un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre concerné",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "set-xp",
+    "description": "✨ Modifier l'XP globale d'un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre ciblé",
+        "required": true
+      },
+      {
+        "name": "montant",
+        "type": 4,
+        "description": "Nouvelle valeur d'XP",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "set-level",
+    "description": "🏆 Modifier le niveau globale d'un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre ciblé",
+        "required": true
+      },
+      {
+        "name": "niveau",
+        "type": 4,
+        "description": "Nouveau niveau du membre",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "rpg-shop",
+    "description": "🏪 Ouvre l'armurerie sacrée pour acheter des classes, équipements et pouvoirs RPG !"
+  },
+  {
+    "name": "rpg-premium-shop",
+    "description": "💎 Acheter des Or d'Aventure RPG avec l'argent de votre serveur !"
+  },
+  {
+    "name": "quest",
+    "description": "🗺️ Partez en quête et accomplissez des exploits héroïques pour gagner de l'Or d'Aventure RPG !"
+  },
+  {
+    "name": "morpion",
+    "description": "❌ Joue au Morpion (Tic-Tac-Toe) contre le bot avec une grille de boutons !"
+  },
+  {
+    "name": "chifoumi",
+    "description": "✊ Joue au Pierre-Feuille-Ciseaux (Chifoumi) contre le bot avec des boutons !"
+  },
+  {
+    "name": "snake",
+    "description": "🐍 Joue au jeu du Snake classique avec une grille d'émojis interactive !"
+  },
+  {
+    "name": "casse-briques",
+    "description": "🧱 Joue au Casse-Briques interactif ! Déplace ta plateforme pour rattraper la balle !"
+  },
+  {
+    "name": "dino-runner",
+    "description": "🦖 Joue au Dino Runner ! Saute au-dessus des obstacles cactus qui défilent !"
+  },
+  {
+    "name": "sokoban",
+    "description": "📦 Joue au Sokoban Tactique ! Pousse toutes les caisses sur les objectifs pour gagner !"
+  },
+  {
+    "name": "role-remove",
+    "description": "👑 Retirer un rôle à un membre du serveur (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre cible",
+        "required": true
+      },
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Rôle à retirer",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "role-temp",
+    "description": "⏳ Assigner un rôle temporaire à un membre (Admin uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre cible",
+        "required": true
+      },
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Rôle temporaire à donner",
+        "required": true
+      },
+      {
+        "name": "temps",
+        "type": 3,
+        "description": "Temps avant expiration (ex: 30s, 5m, 1h, 1d)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "candidature",
+    "description": "📝 Système de recrutement et formulaires de candidature (Admin uniquement)",
+    "options": [
+      {
+        "name": "setup",
+        "type": 1,
+        "description": "Personnaliser les questions du formulaire de candidature",
+        "options": [
+          {
+            "name": "question1",
+            "type": 3,
+            "description": "Première question du formulaire",
+            "required": false
+          },
+          {
+            "name": "question2",
+            "type": 3,
+            "description": "Deuxième question du formulaire",
+            "required": false
+          },
+          {
+            "name": "question3",
+            "type": 3,
+            "description": "Troisième question du formulaire",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "panel",
+        "type": 1,
+        "description": "Ouvrir le panneau de recrutement pour que les membres postulent",
+        "options": [
+          {
+            "name": "salon-reception",
+            "type": 7,
+            "description": "Salon où le staff recevra les candidatures soumises",
+            "required": true
+          },
+          {
+            "name": "salon-panel",
+            "type": 7,
+            "description": "Salon où le bouton \"Postuler\" sera envoyé",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "warn",
+    "description": "⚠️ Donner un avertissement officiel à un membre (Staff uniquement)",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à avertir",
+        "required": true
+      },
+      {
+        "name": "raison",
+        "type": 3,
+        "description": "Raison précise de l'avertissement",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "annonce",
+    "description": "📢 Créer une annonce stylisée avec ping personnalisé (Admin uniquement)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Le salon d'envoi de l'annonce",
+        "required": true
+      },
+      {
+        "name": "ping-type",
+        "type": 3,
+        "description": "Qui faut-il mentionner (ping) ? (Optionnel)",
+        "required": false,
+        "choices": [
+          {
+            "name": "Aucun ping ❌",
+            "value": "none"
+          },
+          {
+            "name": "Tout le monde (@everyone)",
+            "value": "everyone"
+          },
+          {
+            "name": "Membres en ligne (@here)",
+            "value": "here"
+          },
+          {
+            "name": "Un rôle spécifique",
+            "value": "role"
+          }
+        ]
+      },
+      {
+        "name": "role-specifique",
+        "type": 8,
+        "description": "Le rôle spécifique si vous avez choisi \"Un rôle spécifique\"",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "leaderboard",
+    "description": "🏆 Affiche le classement général (Fortune ou XP)",
+    "options": [
+      {
+        "name": "type",
+        "type": 3,
+        "description": "Type de classement à afficher",
+        "required": true,
+        "choices": [
+          {
+            "name": "Fortune 💳",
+            "value": "riches"
+          },
+          {
+            "name": "XP / Niveaux ✨",
+            "value": "xp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "daily",
+    "description": "📆 Réclamer votre récompense quotidienne de pièces !"
+  },
+  {
+    "name": "hasard",
+    "description": "🎲 Choisir un membre au hasard et lui attribuer un rôle (ping) ou de l'argent",
+    "options": [
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Le rôle à attribuer au membre (pingez-le simplement)",
+        "required": false
+      },
+      {
+        "name": "pieces",
+        "type": 4,
+        "description": "Montant de pièces à attribuer au membre tiré au sort",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "rolesmenu",
+    "description": "🏷️ Créer un menu interactif de sélection de rôles (Admin uniquement)",
+    "options": [
+      {
+        "name": "question",
+        "type": 3,
+        "description": "La question ou titre (ex: Quels rôles souhaitez-vous ?)",
+        "required": true
+      },
+      {
+        "name": "roles-liste",
+        "type": 3,
+        "description": "Liste de rôles séparés par des virgules (ex: Joueur, Streamer, VIP)",
+        "required": true
+      },
+      {
+        "name": "type-choix",
+        "type": 3,
+        "description": "Type de sélection autorisée",
+        "required": true,
+        "choices": [
+          {
+            "name": "Choix unique (un seul rôle maximum)",
+            "value": "single"
+          },
+          {
+            "name": "Choix multiples (plusieurs rôles)",
+            "value": "multiple"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "salaire",
+    "description": "🪙 Configurer ou réclamer le salaire récurrent associé à vos rôles",
+    "options": [
+      {
+        "name": "action",
+        "type": 3,
+        "description": "L'action que vous souhaitez effectuer (réclamer, voir, configurer, supprimer)",
+        "required": false,
+        "choices": [
+          {
+            "name": "💰 Réclamer mes salaires",
+            "value": "claim"
+          },
+          {
+            "name": "📋 Voir la grille des salaires",
+            "value": "list"
+          },
+          {
+            "name": "⚙️ Modifier / Configurer un salaire (Admin)",
+            "value": "set"
+          },
+          {
+            "name": "🗑️ Supprimer un salaire (Admin)",
+            "value": "delete"
+          }
+        ]
+      },
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Le rôle concerné (pour configurer ou supprimer)",
+        "required": false
+      },
+      {
+        "name": "montant",
+        "type": 4,
+        "description": "Le montant en pièces (pour configurer)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "pay",
+    "description": "💸 Donner une partie de vos pièces à un autre membre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Membre à qui transférer l'argent",
+        "required": true
+      },
+      {
+        "name": "montant",
+        "type": 4,
+        "description": "Montant de pièces à transférer",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "multiplier",
+    "description": "🔥 Gestion des multiplicateurs de gains (Admin uniquement)",
+    "options": [
+      {
+        "name": "role-add",
+        "type": 1,
+        "description": "Ajoute ou modifie un multiplicateur de gain pour un rôle",
+        "options": [
+          {
+            "name": "role",
+            "type": 8,
+            "description": "Le rôle auquel appliquer le multiplicateur",
+            "required": true
+          },
+          {
+            "name": "facteur",
+            "type": 10,
+            "description": "Le facteur multiplicateur (ex: 1.5 pour +50%, 2.0 pour double)",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "role-remove",
+        "type": 1,
+        "description": "Supprime le multiplicateur de gain d'un rôle",
+        "options": [
+          {
+            "name": "role",
+            "type": 8,
+            "description": "Le rôle à retirer",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "user-add",
+        "type": 1,
+        "description": "Attribue un multiplicateur personnel permanent ou temporaire à un membre",
+        "options": [
+          {
+            "name": "membre",
+            "type": 6,
+            "description": "Le membre ciblé",
+            "required": true
+          },
+          {
+            "name": "facteur",
+            "type": 10,
+            "description": "Le facteur multiplicateur (ex: 1.5 pour +50%, 2.0 pour double)",
+            "required": true
+          },
+          {
+            "name": "duree",
+            "type": 3,
+            "description": "Durée temporaire (ex: 30s, 5m, 2h, 1d) - Laisser vide pour permanent",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "user-remove",
+        "type": 1,
+        "description": "Supprime le multiplicateur personnel d'un membre",
+        "options": [
+          {
+            "name": "membre",
+            "type": 6,
+            "description": "Le membre ciblé",
+            "required": true
+          }
+        ]
+      },
+      {
+        "name": "list",
+        "type": 1,
+        "description": "Affiche la liste de tous les multiplicateurs de gains actifs"
+      }
+    ]
+  },
+  {
+    "name": "vocal-temporaire",
+    "description": "🎙️ Configurez le système de salons vocaux temporaires (Join-to-Create)",
+    "options": [
+      {
+        "name": "statut",
+        "type": 5,
+        "description": "Activer (Vrai) ou désactiver (Faux) le système de salons vocaux temporaires",
+        "required": true
+      },
+      {
+        "name": "salon-createur",
+        "type": 7,
+        "description": "Le salon vocal sur lequel se connecter pour créer son salon temporaire",
+        "required": false
+      },
+      {
+        "name": "categorie",
+        "type": 7,
+        "description": "La catégorie sous laquelle créer les nouveaux salons temporaires (Optionnel)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "unwarn",
+    "description": "🛡️ Réinitialiser ou retirer les avertissements (warns) d'un membre",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre à qui retirer les avertissements",
+        "required": true
+      },
+      {
+        "name": "quantite",
+        "type": 3,
+        "description": "Quantité d'avertissements à retirer",
+        "required": false,
+        "choices": [
+          {
+            "name": "Tout réinitialiser (0 warn) 🔄",
+            "value": "all"
+          },
+          {
+            "name": "Retirer un seul avertissement ➖",
+            "value": "one"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "trivia",
+    "description": "🧠 Répondez à une question de culture générale en français pour gagner des pièces"
+  },
+  {
+    "name": "coinflip",
+    "description": "🪙 Lance une pièce de monnaie (Pile ou Face) pour parier des pièces",
+    "options": [
+      {
+        "name": "mise",
+        "type": 4,
+        "description": "Le montant de pièces à miser",
+        "required": true
+      },
+      {
+        "name": "choix",
+        "type": 3,
+        "description": "Sélectionnez Pile ou Face",
+        "required": true,
+        "choices": [
+          {
+            "name": "Pile 🪙",
+            "value": "pile"
+          },
+          {
+            "name": "Face 👤",
+            "value": "face"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ascii",
+    "description": "🎨 Génère une superbe image cyber banner avec votre avatar et votre texte !",
+    "options": [
+      {
+        "name": "texte",
+        "type": 3,
+        "description": "Texte court (max 10 lettres/chiffres)",
+        "required": true
+      },
+      {
+        "name": "couleur",
+        "type": 3,
+        "description": "La couleur de la bannière cyber",
+        "required": false,
+        "choices": [
+          {
+            "name": "💜 Violet (Synthwave)",
+            "value": "violet"
+          },
+          {
+            "name": "💙 Bleu (Électrique)",
+            "value": "bleu"
+          },
+          {
+            "name": "❤️ Rouge (Néon)",
+            "value": "rouge"
+          },
+          {
+            "name": "💚 Vert (Cyber)",
+            "value": "vert"
+          },
+          {
+            "name": "💖 Rose (Barbie)",
+            "value": "rose"
+          },
+          {
+            "name": "💛 Or (Élite)",
+            "value": "gold"
+          },
+          {
+            "name": "🌈 Arc-en-ciel (Multicolore)",
+            "value": "rainbow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "timestamp",
+    "description": "⏰ Génère des balises de temps Discord dynamiques copiables",
+    "options": [
+      {
+        "name": "date-heure",
+        "type": 3,
+        "description": "Ex: +30m, +2h, +5d (relatif) ou date standard (ex: 2026-07-20 18:00)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "vocal-limit",
+    "description": "🔊 Modifier la limite d'utilisateurs de votre salon vocal temporaire",
+    "options": [
+      {
+        "name": "limite",
+        "type": 4,
+        "description": "Le nombre maximum de personnes (0 pour aucune limite, max 99)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "lovecalc",
+    "description": "💞 Calcule la complicité et la compatibilité de communication écrite entre deux membres",
+    "options": [
+      {
+        "name": "membre1",
+        "type": 6,
+        "description": "Le premier membre",
+        "required": true
+      },
+      {
+        "name": "membre2",
+        "type": 6,
+        "description": "Le deuxième membre (Optionnel, sinon calcule avec vous-même)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "autorole",
+    "description": "🏷️ Attribue automatiquement un ou plusieurs rôles par défaut dès qu'un membre rejoint le serveur",
+    "options": [
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Le rôle à ajouter ou modifier pour l'autorole",
+        "required": false
+      },
+      {
+        "name": "action",
+        "type": 3,
+        "description": "Action sur l'autorole (ajouter, retirer, activer, désactiver)",
+        "required": false,
+        "choices": [
+          {
+            "name": "➕ Ajouter / Définir le rôle",
+            "value": "add"
+          },
+          {
+            "name": "➖ Retirer le rôle",
+            "value": "remove"
+          },
+          {
+            "name": "🟢 Activer l'autorole",
+            "value": "enable"
+          },
+          {
+            "name": "🔴 Désactiver l'autorole",
+            "value": "disable"
+          },
+          {
+            "name": "📋 Afficher la configuration",
+            "value": "status"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "reglement",
+    "description": "📜 Publier le règlement interactif du serveur avec le rôle d'acceptation choisi (Admin uniquement)",
+    "options": [
+      {
+        "name": "texte",
+        "type": 3,
+        "description": "Le texte du règlement ou des règles",
+        "required": true
+      },
+      {
+        "name": "role",
+        "type": 8,
+        "description": "Le rôle à attribuer après acceptation",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "recherche-motcle",
+    "description": "🔍 Retrouve qui a mentionné un mot-clé ou sujet récemment sur le serveur",
+    "options": [
+      {
+        "name": "motcle",
+        "type": 3,
+        "description": "Mot-clé ou sujet à rechercher dans les récents messages",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "recap-membre",
+    "description": "📋 Récapitulatif complet d'un membre (warns, mutes, dates join, pseudos) - Staff",
+    "options": [
+      {
+        "name": "membre",
+        "type": 6,
+        "description": "Le membre à inspecter",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "set-bio",
+    "description": "✍️ Définissez votre bio sur votre mini-profil personnalisé",
+    "options": [
+      {
+        "name": "texte",
+        "type": 3,
+        "description": "Votre courte biographie (300 caract. max)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "anniversaire-config",
+    "description": "🎂 Configure le salon et active/désactive les anniversaires (Admin)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Salon où fêter les anniversaires",
+        "required": true
+      },
+      {
+        "name": "statut",
+        "type": 5,
+        "description": "Activer (Vrai) ou Désactiver (Faux)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "anniversaire-set",
+    "description": "🎂 Enregistrez votre date d'anniversaire (format JJ/MM)",
+    "options": [
+      {
+        "name": "date",
+        "type": 3,
+        "description": "Votre date d'anniversaire (ex: 15/08)",
+        "required": true
+      }
+    ]
+  },
+  {
+    "name": "annonce-programme",
+    "description": "📅 Programmer une annonce à publier à une date/heure spécifique (Staff)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Salon destinataire de l'annonce",
+        "required": true
+      },
+      {
+        "name": "titre",
+        "type": 3,
+        "description": "Titre principal de l'annonce",
+        "required": true
+      },
+      {
+        "name": "contenu",
+        "type": 3,
+        "description": "Contenu / Texte de l'annonce",
+        "required": true
+      },
+      {
+        "name": "delai_ou_date",
+        "type": 3,
+        "description": "Ex: 30m, 2h, 1d ou 2026-08-15 14:00",
+        "required": true
+      },
+      {
+        "name": "role_specifique",
+        "type": 8,
+        "description": "Rôle spécifique à mentionner (ex: @Annonces)",
+        "required": false
+      }
+    ]
+  },
+  {
+    "name": "classement-config",
+    "description": "🏆 Configurer le salon du classement économie en direct (Mise à jour toutes les 1h)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Salon dédié au classement en direct de la fortune/banque",
+        "required": false
+      },
+      {
+        "name": "action",
+        "type": 3,
+        "description": "Action à effectuer",
+        "required": false,
+        "choices": [
+          {
+            "name": "⚙️ Activer / Mettre à jour maintenant",
+            "value": "update"
+          },
+          {
+            "name": "🛑 Désactiver le classement en direct",
+            "value": "disable"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "annonce-attente",
+    "description": "📋 Consulter et gérer l'historique des annonces programmées en attente"
+  },
+  {
+    "name": "mute-salons",
+    "description": "🔕 Masquer temporairement un salon sans quitter le serveur (Auto-restauré)",
+    "options": [
+      {
+        "name": "salon",
+        "type": 7,
+        "description": "Le salon à couper/masquer temporairement",
+        "required": true
+      },
+      {
+        "name": "duree",
+        "type": 3,
+        "description": "Durée du masquage (ex: 30m, 2h, 8h, 1d)",
+        "required": true
+      }
+    ]
+  }
+]

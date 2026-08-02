@@ -1,0 +1,170 @@
+{
+  "entities": {
+    "BotConfig": {
+      "title": "BotConfig",
+      "description": "Configuration globale du bot Discord",
+      "type": "object",
+      "properties": {
+        "token": { "type": "string" },
+        "status": { "type": "string", "enum": ["online", "idle", "dnd", "invisible"] },
+        "isRunning": { "type": "boolean" },
+        "aiEnabled": { "type": "boolean" },
+        "aiProvider": { "type": "string", "enum": ["gemini", "openai", "custom"] },
+        "apiKey": { "type": "string" },
+        "systemPrompt": { "type": "string" },
+        "botName": { "type": "string" },
+        "ticketPrefix": { "type": "string" },
+        "guardAntiraid": { "type": "boolean" },
+        "guardAntispam": { "type": "boolean" },
+        "guardAntilink": { "type": "boolean" },
+        "guardAntibot": { "type": "boolean" },
+        "guardLimitSpam": { "type": "number" },
+        "guardLimitSpamTime": { "type": "number" },
+        "guardLimitMention": { "type": "number" },
+        "guardLimitMentionTime": { "type": "number" },
+        "guardLimitLinks": { "type": "number" },
+        "guardLimitLinksTime": { "type": "number" },
+        "guardSanctionSpam": { "type": "string" },
+        "guardSanctionLink": { "type": "string" },
+        "guardSanctionRaid": { "type": "string" },
+        "guardWhitelist": { "type": "array" },
+        "guardLogsChannelId": { "type": "string" },
+        "guardCaptcha": { "type": "boolean" },
+        "guardCaptchaRoleVerifiedId": { "type": "string" },
+        "guardCaptchaChannelId": { "type": "string" },
+        "fortressMode": { "type": "boolean" },
+        "currencyName": { "type": "string" },
+        "currencyEmoji": { "type": "string" },
+        "salaryWorkMin": { "type": "number" },
+        "salaryWorkMax": { "type": "number" },
+        "salaryWorkCooldown": { "type": "number" },
+        "salaryCrimeMin": { "type": "number" },
+        "salaryCrimeMax": { "type": "number" },
+        "salaryCrimeCooldown": { "type": "number" },
+        "robSuccessRate": { "type": "number" },
+        "robMaxFine": { "type": "number" },
+        "levelXpStatus": { "type": "boolean" },
+        "xpRateMin": { "type": "number" },
+        "xpRateMax": { "type": "number" },
+        "xpRateCooldown": { "type": "number" },
+        "vocalXpAmount": { "type": "number" },
+        "vocalXpMinutes": { "type": "number" },
+        "levelRewards": { "type": "object" },
+        "levelBlacklist": { "type": "array" },
+        "levelAnnouncement": { "type": "string" },
+        "levelAnnouncementChannelId": { "type": "string" },
+        "levelMoneyStatus": { "type": "boolean" },
+        "levelMoneyRewardAmount": { "type": "number" },
+        "ticketChannelId": { "type": "string" },
+        "ticketEmbedTitle": { "type": "string" },
+        "ticketEmbedDesc": { "type": "string" },
+        "ticketButtonText": { "type": "string" },
+        "ticketStaffRoleId": { "type": "string" },
+        "ticketCategoryId": { "type": "string" },
+        "ticketLogsChannelId": { "type": "string" },
+        "langReactionStatus": { "type": "boolean" },
+        "langAutoPairs": { "type": "array" },
+        "eventBonusMessagesRequired": { "type": "number" },
+        "eventBonusMoneyReward": { "type": "number" }
+      }
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Profil de l'utilisateur pour l'économie et le leveling",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "username": { "type": "string" },
+        "wallet": { "type": "number" },
+        "bank": { "type": "number" },
+        "xp": { "type": "number" },
+        "level": { "type": "number" },
+        "inventory": { "type": "object" },
+        "warnsCount": { "type": "number" },
+        "warns": { "type": "array" },
+        "levelBackgroundUrl": { "type": "string" },
+        "lastWork": { "type": "string" },
+        "lastCrime": { "type": "string" }
+      }
+    },
+    "GiftCard": {
+      "title": "GiftCard",
+      "description": "Cartes cadeaux de l'économie par codes",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "value": { "type": "number" },
+        "tier": { "type": "string", "enum": ["commun", "rare", "epique", "legendaire"] },
+        "maxUses": { "type": "string" },
+        "currentUses": { "type": "number" },
+        "expiration": { "type": "string" },
+        "claimedBy": { "type": "array" }
+      }
+    },
+    "EggItem": {
+      "title": "EggItem",
+      "description": "Oeuf en boutique",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "price": { "type": "number" },
+        "rewardType": { "type": "string", "enum": ["eco", "xp", "role"] },
+        "rewardValue": { "type": "string" }
+      }
+    },
+    "Ticket": {
+      "title": "Ticket",
+      "description": "Ticket d'assistance de support",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "channelId": { "type": "string" },
+        "userId": { "type": "string" },
+        "username": { "type": "string" },
+        "status": { "type": "string", "enum": ["open", "closed"] },
+        "category": { "type": "string", "enum": ["support", "billing", "other"] },
+        "createdAt": { "type": "string" },
+        "closedAt": { "type": "string" }
+      }
+    },
+    "BotLog": {
+      "title": "BotLog",
+      "description": "Log d'activité du bot",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "type": { "type": "string" },
+        "message": { "type": "string" },
+        "user": { "type": "string" },
+        "guild": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/bot_config/{configId}": {
+      "schema": "BotConfig",
+      "description": "Configuration globale"
+    },
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "Données économiques et XP des membres"
+    },
+    "/giftcards/{code}": {
+      "schema": "GiftCard",
+      "description": "Codes cadeaux actifs"
+    },
+    "/eggs/{eggId}": {
+      "schema": "EggItem",
+      "description": "Oeufs de boutique configurés"
+    },
+    "/tickets/{ticketId}": {
+      "schema": "Ticket",
+      "description": "Tickets d'assistance ouverts"
+    },
+    "/bot_logs/{logId}": {
+      "schema": "BotLog",
+      "description": "Logs d'activité"
+    }
+  }
+}
