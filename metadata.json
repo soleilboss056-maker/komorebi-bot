@@ -1,0 +1,6 @@
+{
+  "name": "Discord Bot Control Dashboard",
+  "description": "Un tableau de bord complet et intelligent pour contrôler un bot Discord avec IA (Gemini/OpenAI), système de tickets, modération et statistiques en temps réel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
